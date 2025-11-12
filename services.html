@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Tech ZAGA-DAD</title>
+  <meta name="description" content="Liste détaillée des services informatiques : création réseau, sécurité, hébergement, maintenance, formation — Tech ZAGA-DAD, Djibouti." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><h1>Tech <span>ZAGA-DAD</span></h1></div>
+      <button id="navToggle">☰</button>
+      <nav id="mainNav" class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Nos services informatiques</h2>
+
+    <section class="service-list">
+      <article class="card">
+        <h3>Conception et installation réseau</h3>
+        <p>Plan d'adressage IP, câblage, configuration de routeurs et switches, Wi-Fi professionnel et segmentation (VLAN).</p>
+        <p><strong>Livrables :</strong> schéma réseau, configuration, tests.</p>
+      </article>
+
+      <article class="card">
+        <h3>Sécurité & sauvegarde</h3>
+        <p>Audit sécurité, règles de firewall, sauvegarde automatisée et plan de reprise après sinistre.</p>
+      </article>
+
+      <article class="card">
+        <h3>Maintenance & support</h3>
+        <p>Interventions sur site ou à distance, mises à jour, dépannage et supervision.</p>
+      </article>
+
+      <article class="card">
+        <h3>Sites web & hébergement</h3>
+        <p>Site vitrine, intégration SEO basique, nom de domaine, configuration HTTPS et hébergement (optionnel).</p>
+      </article>
+
+      <article class="card">
+        <h3>Formation & transfert</h3>
+        <p>Sessions pour apprendre à gérer votre site, sauvegarder vos données et maintenir votre réseau.</p>
+      </article>
+    </section>
+
+    <div class="cta-row" style="justify-content:center;">
+      <a class="btn" href="contact.html">Demander un devis</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Tech ZAGA-DAD — <a href="mailto:ayanlahmohamed55@gmail.com">ayanlahmohamed55@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', ()=> document.getElementById('mainNav').classList.toggle('open'));
+    document.querySelectorAll('.nav a').forEach(a=>{ if(location.pathname.endsWith(a.getAttribute('href'))){ a.classList.add('active'); }});
+  </script>
+</body>
+</html>
