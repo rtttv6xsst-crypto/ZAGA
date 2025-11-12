@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Tech ZAGA-DAD</title>
+  <meta name="description" content="Contactez Tech ZAGA-DAD — +253 77 11 88 30 — ayanlahmohamed55@gmail.com. Demandez un devis ou assistance technique." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><h1>Tech <span>ZAGA-DAD</span></h1></div>
+      <button id="navToggle">☰</button>
+      <nav id="mainNav" class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content-card">
+    <h2>Contactez-nous</h2>
+
+    <div class="contact-info">
+      <p><strong>Téléphone :</strong> <a href="tel:+25377118830">+253 77 11 88 30</a></p>
+      <p><strong>Email :</strong> <a href="mailto:ayanlahmohamed55@gmail.com">ayanlahmohamed55@gmail.com</a></p>
+      <p><strong>Lieu :</strong> Djibouti</p>
+    </div>
+
+    <!-- Formulaire : remplace l'URL Formspree par la tienne après enregistrement -->
+    <form class="contact-form" action="https://formspree.io/f/xnqeyyge" method="POST">
+      <label>Nom</label>
+      <input type="text" name="name" required>
+
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <label>Message</label>
+      <textarea name="message" rows="6" required></textarea>
+
+      <button class="btn" type="submit">Envoyer</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Tech ZAGA-DAD — <a href="mailto:ayanlahmohamed55@gmail.com">ayanlahmohamed55@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', ()=> document.getElementById('mainNav').classList.toggle('open'));
+  </script>
+</body>
+</html>
