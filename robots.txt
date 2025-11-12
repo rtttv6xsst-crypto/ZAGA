@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ayanlehmohamedibrahim.github.io/Tech-ZAGA-DAD/sitemap.xml
