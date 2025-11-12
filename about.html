@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>À propos — Tech ZAGA-DAD</title>
+  <meta name="description" content="À propos — Tech ZAGA-DAD. Expert en réseau informatique et services IT à Djibouti. Installation, maintenance et formation." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><h1>Tech <span>ZAGA-DAD</span></h1></div>
+      <button id="navToggle">☰</button>
+      <nav id="mainNav" class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="about.html" class="active">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container content-card">
+      <h2>Qui sommes-nous ?</h2>
+      <p>Tech ZAGA-DAD est un service local à Djibouti spécialisé dans les réseaux informatiques, la sécurité, l'hébergement et la formation. Nous aidons les petites entreprises et artisans à disposer d'infrastructures fiables et sécurisées.</p>
+
+      <h3>Notre approche</h3>
+      <ul>
+        <li>Écoute du besoin et diagnostic</li>
+        <li>Proposition claire et devis</li>
+        <li>Déploiement rapide et tests</li>
+        <li>Formation et transfert de compétences</li>
+      </ul>
+
+      <h3>Valeurs</h3>
+      <p>Fiabilité, transparence, proximité et support réactif.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Tech ZAGA-DAD — Djibouti • <a href="mailto:ayanlahmohamed55@gmail.com">ayanlahmohamed55@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', ()=> document.getElementById('mainNav').classList.toggle('open'));
+    document.querySelectorAll('.nav a').forEach(a=>{ if(location.pathname.endsWith(a.getAttribute('href'))){ a.classList.add('active'); }});
+  </script>
+</body>
+</html>
