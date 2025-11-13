@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ZAGA — Réseau & Cybersécurité</title>
+  <meta name="description" content="ZAGA — Services de réseau informatique, cybersécurité, et formations BTS. Conception LAN/Wi-Fi, VPN, monitoring." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="ZAGA — Réseau & Cybersécurité" />
+  <meta property="og:description" content="Services de réseau informatique, cybersécurité et formation. Découvre nos offres." />
+  <meta property="og:image" content="./assets/banner.jpg" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="./assets/banner.jpg" alt="ZAGA banner" class="banner" />
+    <div class="hero-content">
+      <img src="./logo.svg" alt="ZAGA logo" class="logo" />
+      <h1>ZAGA</h1>
+      <p>Experts en réseau informatique, cybersécurité & formation (BTS).</p>
+      <a class="btn" href="#services">Nos services</a>
+      <a class="btn ghost" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="services" class="card">
+      <h2>Nos services</h2>
+      <ul>
+        <li>Conception LAN / Wi-Fi sécurisés</li>
+        <li>Configuration routeurs & switches</li>
+        <li>VPN (OpenVPN, WireGuard)</li>
+        <li>Monitoring & alerting (Zabbix, Prometheus)</li>
+        <li>Audit de sécurité et hardening</li>
+      </ul>
+    </section>
+
+    <section id="formations" class="card">
+      <h2>Formations</h2>
+      <p>Préparation BTS Réseaux & BTS Cybersécurité — cours pratiques, TP et certifications.</p>
+      <ul>
+        <li>Réseaux fondamentaux</li>
+        <li>Sécurité des systèmes</li>
+        <li>Pratique sur routeurs/switches</li>
+      </ul>
+    </section>
+
+    <section id="why" class="card">
+      <h2>Pourquoi choisir ZAGA ?</h2>
+      <p>Expérience terrain, solutions adaptées aux PME et formations orientées métier.</p>
+      <div class="grid">
+        <div><strong>Rapide</strong><p>Déploiements optimisés</p></div>
+        <div><strong>Sécurisé</strong><p>Meilleures pratiques</p></div>
+        <div><strong>Pédagogique</strong><p>Matériel de formation prêt à l'emploi</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Envoyez-nous un message : <a href="mailto:contact@zaga.example">contact@zaga.example</a></p>
+      <p>Ou créez une issue sur ce dépôt pour une demande rapide.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> ZAGA — Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
